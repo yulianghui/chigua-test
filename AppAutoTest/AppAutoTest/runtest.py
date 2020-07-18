@@ -25,9 +25,9 @@ if __name__ == "__main__":
     time.sleep(3)
     result = getTestResult.get_result(filename)
     print ("用例执行情况：%s"%result)
-
-    mail = sendEmail.send_Email(filename,result)
     """
+    mail = sendEmail.send_Email(filename,result)
+    
     if mail:
         print ('邮件发送成功')
     else:
